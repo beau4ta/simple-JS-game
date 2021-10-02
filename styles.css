@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: black 1px solid;
+}
+
+.video{
+    width: 200%;
+}
+
+.character{
+    position: relative;
+    top: -150px;
+    left: 100px;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: -150px;}
+    10%{top: -180px}
+    20%{top: -210px}
+    30%{top: -240px;}
+    40%{top: -270px;}
+    50%{top: -300px;}
+    60%{top: -270px;}
+    70%{top: -240px;}
+    80%{top: -210px;}
+    90%{top: -180px;}
+    100%{top: -150px;}
+}
+
+.block{
+    position: relative;
+    left: 750px;
+    top: -230px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 1000px;}
+    100%{left: -40px}
+}
