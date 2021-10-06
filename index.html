@@ -9,9 +9,24 @@
   <body>
     <div id="game">
       <div class="background">
+        <div class="score-container">
+            <h1 class="score-title">Score:</h1>
+            <h1 class="score">0</h1>
+        </div>
         <video class="video" autoplay loop muted>
           <source src="pokemonmovingbg.mp4" type="video/mp4" />
         </video>
+        <div class="start-screen">
+            <h1 class="start-title">Pokémon Scramble</h1>
+            <p class="start-description">
+                Jump over Infernape to score points.
+                If he touches you, you lose.
+            </p>
+            <div class="btn-container">
+              <button class="start-btn">Start</button>
+              <button onclick="location.href='records.html';" class="records-btn">Records</button>
+            </div>
+        </div>
         <div class="character">
           <a href="http://pokemondb.net/pokedex/blaziken">
             <img
@@ -27,6 +42,7 @@
                 alt="Infernape">
             </a>
         </div>
+        <div class="fireball"><img src="fireballs.png"></div>
       </div>
     </div>
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Scramble Records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="records-container">
+        <h1 class="start-title">RECORDS</h1>
+    <div class="records-list">
+        <table class="score-table" style="width:100%">
+            <tr>
+              <th class="initials-title">Initials</th>
+              <th class="scores-title">Score</th>
+            </tr>
+            <tr>
+                <th class="initials-container">
+                </th>
+                <th class="scores-container">
+                </th>
+            </tr>
+          </table>
+    </div>
+    <div class="btn-container">
+    <button onclick="location.href='index.html';" class="start-btn">Back to Main</button>
+    <button onclick="localStorage.clear(); window.location.reload();" class="records-btn">Clear Highscore</button>
+    </div>
+    </div>
+    
+    <script src="records.js"></script>
+</body>
+</html>
